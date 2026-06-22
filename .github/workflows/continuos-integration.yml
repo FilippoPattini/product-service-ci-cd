@@ -30,7 +30,7 @@ jobs:
         uses: super-linter/super-linter@v7.3.0
         env:
           VALIDATE_JAVA: true
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   # GitGuardian Secrets Scan Job: detect and prevent accidental exposure of sensitive credentials in the codebase
   # This job scans all commits and pull requests for API keys, passwords, tokens, and other secrets.
