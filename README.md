@@ -28,4 +28,4 @@
 ### Infrastructure provisioning workflow
 
 * **Purpose:** Provision and configure an AWS EC2 instance.
-* **Required secrets:** `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`.
+* **Required secrets:** `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`. aa
