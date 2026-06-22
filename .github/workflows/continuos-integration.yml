@@ -127,7 +127,6 @@ jobs:
       - name: Build Docker Image
         working-directory: product-service-ci-cd
         run: docker build -t filippopattini/product-service-ci-cd
-.
 
       - name: Run Trivy Vulnerability Scan
         uses: aquasecurity/trivy-action@master
