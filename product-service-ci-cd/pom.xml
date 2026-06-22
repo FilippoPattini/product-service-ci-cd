@@ -8,7 +8,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.3</version>
+        <version>4.0.6</version> <!-- PATCH SPRING BOOT -->
         <relativePath/>
     </parent>
 
@@ -43,7 +43,7 @@
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
-        <!-- PostgreSQL (patched) -->
+        <!-- PostgreSQL (PATCHED) -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
@@ -62,11 +62,18 @@
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
-        <!-- Tomcat (patched) -->
+        <!-- Tomcat (PATCHED) -->
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-core</artifactId>
             <version>11.0.22</version>
+        </dependency>
+
+        <!-- Jackson Core (PATCHED) -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>3.1.1</version>
         </dependency>
 
     </dependencies>
