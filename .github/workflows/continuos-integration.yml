@@ -129,7 +129,7 @@ jobs:
         run: docker build -t nbicocchi/product-service-ci-cd:latest .
 
       - name: Run Trivy Vulnerability Scan
-        uses: aquasecurity/trivy-action@master
+        uses: aquasecurity/trivy-action@0.28.0
         with:
           image-ref: 'docker.io/nbicocchi/product-service-ci-cd:latest'
           format: 'table'
