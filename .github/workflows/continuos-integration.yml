@@ -126,12 +126,12 @@ jobs:
 
       - name: Build Docker Image
         working-directory: product-service-ci-cd
-        run: docker build -t nbicocchi/product-service-ci-cd:latest .
+        run: docker build -t FilippoPattini/product-service-ci-cd:latest .
 
       - name: Run Trivy Vulnerability Scan
-        uses: aquasecurity/trivy-action@v0
+        uses: aquasecurity/trivy-action@master
         with:
-          image-ref: 'docker.io/nbicocchi/product-service-ci-cd:latest'
+          image-ref: 'docker.io/FilippoPattini/product-service-ci-cd:latest'
           format: 'table'
           exit-code: '1'
           ignore-unfixed: true
@@ -145,4 +145,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push Docker Image to Docker Hub
-        run: docker push nbicocchi/product-service-ci-cd:latest
+        run: docker push FilippoPattini/product-service-ci-cd:latest
